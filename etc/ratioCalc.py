@@ -63,7 +63,7 @@ while True:
                 h=[0]*3
                 for i in range(3):
                     w[i],h[i]=gts(ratio_text[i])
-                    cv2.rectangle(temp_frame, (text_x-offset, text_y[i] - h[i] - offset), (text_x+offset + w[i], text_y[i] + offset), white, -1)
+                    cv2.rectangle(temp_frame, (text_x, text_y[i] - h[i] - offset), (text_x+offset + w[i], text_y[i] + offset), white, -1)
                     cv2.putText(temp_frame, ratio_text[i], (text_x, text_y[i]), cv2.FONT_HERSHEY_SIMPLEX, 1, red, 2)
         cv2.imshow("Screen Capture", temp_frame)
 
