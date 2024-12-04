@@ -4,7 +4,7 @@ import matplotlib.font_manager as fm
 import numpy as np
 from matplotlib.ticker import FuncFormatter
 
-a='요기요'
+a='■'
 df = pd.read_csv('./소비자.csv', sep=',',encoding='cp949')
 df2 = pd.read_csv('./기사.csv', sep=',',encoding='cp949')
 df3 = pd.read_csv('./가게.csv', sep=',',encoding='cp949')
